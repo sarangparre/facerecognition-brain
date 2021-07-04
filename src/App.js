@@ -86,7 +86,7 @@ class App extends Component {
       url: "https://face-detection6.p.rapidapi.com/img/face",
       headers: {
         "content-type": "application/json",
-        "x-rapidapi-key":"887cd92ff3mshdf6de250a271eb3p1d2741jsnb56259012d5d",
+        "x-rapidapi-key":process.env.RAPIDAPI_KEY,
         "x-rapidapi-host": "face-detection6.p.rapidapi.com",
       },
       data: { url: "", accuracy_boost: 2 },
